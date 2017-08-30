@@ -27,7 +27,10 @@
                 limit: '8',
                 template: '<li data-aos="flip-down"><a href="{{link}}" target="_blank"><img src="{{image}}" class="img-responsive" /></a></li>',
                 clientId: '5e911a0f55a44a3bb1ca9db11a8e8b6d',
-                accessToken: '41437743.5e911a0.e0b72f502f32427292b09c0891d30260'
+                accessToken: '41437743.5e911a0.e0b72f502f32427292b09c0891d30260',
+                filter: function(image) {
+                    return image.tags.indexOf('casositeasf') >= 0;
+                }
             });
             feed.run();
         </script>
@@ -72,8 +75,8 @@
                                 <li class="active"><a href="index.html" class="page-scroll">Início</a></li>
                                 <li><a href="#about" class="page-scroll">Sobre Mim</a></li>
                                 <li><a href="#service" class="page-scroll">Tratamentos</a></li>
-                                <li><a href="#gallery" class="page-scroll">Casos</a></li>
-                                <li><a href="#team" class="page-scroll">Depoimentos</a></li>
+                                <li><a href="#cases" class="page-scroll">Casos</a></li>
+                                <li><a href="#testimonial" class="page-scroll">Depoimentos</a></li>
                             </ul>
                         </div>
                     </div>
@@ -168,7 +171,7 @@
         </section>
         <!-- cases ends -->
         <!-- testimonials -->
-        <section class="testimonial" id="team">
+        <section class="testimonial" id="testimonial">
             <div class="container">
                 <h3 class="text-center" data-aos="zoom-in">Depoimentos</h3>
                 <hr class="header-line-white"/>
@@ -231,7 +234,7 @@
         <!-- footer -->
         <section class="footer">
             <div class="container">
-                <p class="text-center">Desenvolvido por <a href="#">holandadesign.com.br</a></p>
+                <p class="text-center">Desenvolvido por Olavo Holanda.<a href="mailto:olavohcn@gmail.com" target="_blank"> Contato <i class="fa fa-envelope"></i></a></p>
             </div>
         </section>
         <!-- footer end -->
