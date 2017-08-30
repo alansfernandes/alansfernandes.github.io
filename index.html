@@ -22,15 +22,11 @@
         <!-- scripts -->
         <script>
             var feed = new Instafeed({
-                get: 'user',
-                userId: '3481445537',
-                limit: '8',
+                get: 'tagged',
+                tagName: 'casositeasf',
                 template: '<li data-aos="flip-down"><a href="{{link}}" target="_blank"><img src="{{image}}" class="img-responsive" /></a></li>',
                 clientId: '5e911a0f55a44a3bb1ca9db11a8e8b6d',
-                accessToken: '41437743.5e911a0.e0b72f502f32427292b09c0891d30260',
-                filter: function(image) {
-                    return image.tags.indexOf('casositeasf') >= 0;
-                }
+                accessToken: '41437743.5e911a0.e0b72f502f32427292b09c0891d30260'
             });
             feed.run();
         </script>
